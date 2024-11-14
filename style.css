@@ -21,6 +21,9 @@ body{
     height: 90vh;
     gap: 2vw;
 }
+.main>h1{
+    font-size: 4vw;
+}
 .search-box{
     border-radius: 0.5vw;
     justify-content: space-around;
@@ -46,6 +49,7 @@ input{
     height: 2vw;
     color: white;
     padding: 0.5vw;
+    font-size: 1vw;
 }
 .profile-box{
     padding: 2vw;
@@ -125,3 +129,133 @@ input{
     gap: 1vw;
     align-items: center;
 }
+
+
+@media only screen and (max-width: 600px){
+    body {
+      background-color: lightblue;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        height: 100vw;
+        gap: 2vw;
+        padding: 3vw;
+    }
+    .search-box{
+        border-radius: 0.5vw;
+        justify-content: space-around;
+        background-color: #1E2A47;
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        height: 7vw;
+        padding: 2vw;
+    }
+    input{
+        background-color: #1E2A47;
+        border: none;
+        width: 80%;
+        height: 3.5vw;
+        color: white;
+        padding: 0.5vw;
+        font-size: 2vw;
+    }
+    .search-box>button{
+        background-color: rgb(57, 142, 221);
+        border: none;
+        border-radius: 0.3vw;
+        color: white;
+        padding: 0.5vw 1vw;
+        font-size: 2vw;
+    }
+    .profile-box{
+        padding: 2vw;
+        background-color: #1E2A47;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* justify-content: center; */
+        width: 80vw;
+        height: 80vh;
+        border-radius: 0.5vw;
+    
+    }
+    .head{
+        display: flex;
+        margin-bottom: 5vw;
+    }
+    .head>div{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 60vw;
+        gap: 4vw;
+        margin-top: 3vw;
+    }
+    .head>div>.name>.user-name{
+         color: blue;
+         margin-bottom: 2vw;
+         margin-top: 0.5vw;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 3vw;
+    }
+    .head>div>img{
+        width: 10vw;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .head>div>div>h4{
+        font-size: 2vw;
+    }
+    .head>div>div>h2{
+        font-size: 4vw;
+    }
+    .head>div>img{
+        width: 15vw;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .bio{
+        display: flex;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        flex-wrap: wrap;
+        width: 60vw;
+    }
+    .followers{
+        border-radius: 1vw;
+        display: flex;
+        width: 62vw;
+        justify-content: center;
+        align-items: center;
+        height: 8vw;
+        gap: 10vw;
+        background-color: #141D2F;
+        font-size: 2vw;
+        margin-bottom: 4vw;
+        padding: 2vw;
+        margin-top: 2vw;
+    }
+    .followers>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+    }
+    .links>div>div{
+        display: flex;
+        margin-bottom: 1vw;
+        font-size: 1.6vw;
+        gap: 2vw;
+        align-items: center;
+    }
+  }
